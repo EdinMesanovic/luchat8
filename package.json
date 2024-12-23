@@ -1,0 +1,21 @@
+{
+  "name": "luchat8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx postcss assets/css/tailwind.css -o assets/css/theme.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.0"
+  }
+}

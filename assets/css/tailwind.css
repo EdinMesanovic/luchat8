@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("../fonts/bricolage-grotesque/BricolageGrotesque-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.w-embed:before,
+.w-embed:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
