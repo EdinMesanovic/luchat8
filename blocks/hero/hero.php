@@ -1,27 +1,34 @@
 <?php
-$hero_title = get_sub_field('hero_title');
-$hero_subtitle = get_sub_field('hero_subtitle');
-$hero_background = get_sub_field('hero_background');
+// Preuzimanje ACF polja za naslov i video fajl
+$hero_title = get_sub_field('hero_title'); // Dinamički naslov
+$hero_video_file = get_sub_field('hero_video_file'); // URL video fajla (mp4)
+?>
 
-if ($hero_title || $hero_subtitle || $hero_background): ?>
-    <section class="relative bg-cover bg-center h-screen flex items-center justify-center text-center"
-         style="background-image: url('<?php echo esc_url($hero_background['url']); ?>');">
-    <!-- Tamni overlay -->
-    <div class="bg-black bg-opacity-60 w-full h-full absolute inset-0"></div>
+<section class="relative w-screen h-screen flex items-center justify-center text-center">
+    <!-- Video pozadina -->
+    <?php if ($hero_video_file): ?>
+        <div class="absolute inset-0 w-full h-full">
+            <video class="object-cover w-full h-full" autoplay loop muted playsinline>
+                <source src="<?php echo esc_url($hero_video_file); ?>" type="video/mp4">
+                <!-- Fallback poruka za nepodržane browser-e -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    <?php endif; ?>
 
-    <!-- Sadržaj hero sekcije -->
-    <div class="relative z-10 text-white px-6 max-w-4xl mx-auto">
-        <?php if ($hero_title): ?>
-            <h1 class="animate-fade-in-down text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+    <!-- Naslov -->
+    <?php if ($hero_title): ?>
+    <div class="absolute sm:top-[15%] top-auto bottom-[10%] sm:bottom-auto left-1/2 transform -translate-x-1/2 z-10 text-center">
+        <h1 class="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-bricolageGrotesque font-bold leading-[1.2] tracking-[-0.02em] text-white decoration-skip-ink max-w-full whitespace-nowrap mx-auto">
             <?php echo esc_html($hero_title); ?>
-            </h1>
-        <?php endif; ?>
-
-        <?php if ($hero_subtitle): ?>
-            <p class="text-lg md:text-2xl font-light mb-6">
-                <?php echo esc_html($hero_subtitle); ?>
-            </p>
-        <?php endif; ?>
+        </h1>
     </div>
-</section>
 <?php endif; ?>
+
+
+
+
+
+
+
+</section>

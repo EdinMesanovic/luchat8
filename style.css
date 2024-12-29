@@ -7,3 +7,37 @@ Description: A modern WordPress theme
 Version: 1.0
 Text Domain: luchat
 */
+
+body {
+    background-color: #e4f4f1;
+    color: #FFFFFF; /* Bela boja teksta za kontrast */
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content {
+    margin-top: 20px;
+}
+
+.slide-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0071bc;
+}
+
+.slide-description {
+    font-size: 16px;
+    color: #555;
+}
