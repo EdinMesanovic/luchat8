@@ -33,8 +33,8 @@
     <?php 
 $learn_more = get_sub_field('learn_more'); 
 if ($learn_more): ?>
-    <div class="flex items-center justify-center h-screen">
-        <a href="<?php echo esc_url($learn_more); ?>" class="inline-block w-[140px] h-[60px] px-[30px] py-[10px] rounded-tl-[30px] rounded-tr-[30px] rounded-br-[30px] rounded-bl-[30px] bg-[rgba(0,113,188,1)] text-white font-modern text-[16px] font-bold leading-[40px] text-center no-underline hover:opacity-80 hover:bg-[rgba(0,90,150,1)] transition-opacity duration-300">
+    <div class="flex items-center justify-center">
+        <a href="<?php echo esc_url($learn_more); ?>" class="my-20 inline-block w-[140px] h-[60px] px-[30px] py-[10px] rounded-tl-[30px] rounded-tr-[30px] rounded-br-[30px] rounded-bl-[30px] bg-[rgba(0,113,188,1)] text-white font-normal text-[16px] leading-[40px] text-center no-underline hover:opacity-80 hover:bg-[rgba(0,90,150,1)] transition-opacity duration-300 whitespace-nowrap">
             Learn More
         </a>
     </div>
