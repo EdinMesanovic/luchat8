@@ -14,8 +14,8 @@ get_header()
                 get_template_part('blocks/heading/heading');
     
             // Gallery Section
-            elseif (get_row_layout() == 'gallery_section'):
-                get_template_part('blocks/gallery');
+            elseif (get_row_layout() == 'accordion_section'):
+                get_template_part('blocks/accordion/accordion');
     
             // Services Section
             elseif (get_row_layout() == 'services_section'):

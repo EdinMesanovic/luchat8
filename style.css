@@ -13,11 +13,30 @@ body {
     color: #FFFFFF; /* Bela boja teksta za kontrast */
     margin: 0;
     padding: 0;
+    overflow-x: hidden
+}
+
+.font-review {
+    font-family: "Modern Era", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.custom-border {
+    position: relative;
+    padding: 16px;
+    border: 1px solid transparent; /* Transparent border za podršku gradienta */
+    border-radius: 20px 20px 20px 20px; /* Prilagođeno zaobljenje */
+    background: linear-gradient(#e4f4f1, #e4f4f1) padding-box, /* Unutrašnja boja */
+                linear-gradient(73.51deg, #278EFF 1.64%, #00D694 101.22%) border-box; /* Gradient border */
 }
 
 .swiper-container {
     width: 100%;
-    height: 100%;
 }
 
 .swiper-slide {
@@ -25,6 +44,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: auto;
+    min-height: 300px;
 }
 
 .slide-content {
@@ -40,4 +61,93 @@ body {
 .slide-description {
     font-size: 16px;
     color: #555;
+}
+
+.accordion_section {
+    margin: 0 40px 0 40px;
+    padding-top: 73px;
+    background-color: #d2f2ea;
+    border-radius: 32px;
+}
+
+.accordion_section, .accordion {
+    padding-top: 114px;
+}
+  
+  .swiper-wrapper {
+    -webkit-transition-timing-function:linear!important; 
+    -o-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
+  }
+
+
+
+
+/* Accordion Item */
+.accordion-item {
+    margin-bottom: 1rem; /* Razmak između stavki */
+    border-bottom: 1px solid rgba(0, 113, 188, 0.2); /* Tanka linija ispod svakog naslova */
+    padding: 1rem 0; /* Unutrašnji razmak */
+}
+
+.accordion-item {
+    transition: background 0.3s ease, border-radius 0.3s ease;
+}
+
+/* Accordion Header Button */
+.accordion-item button {
+    font-family: 'Bricolage Grotesque', sans-serif; /* Font za naslov */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.92px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(0, 113, 188, 1); /* Plava boja za naslov */
+    background: none; /* Bez pozadine */
+    border: none; /* Bez ivica */
+    padding: 0;
+    width: 100%; /* Popuni širinu */
+    cursor: pointer; /* Pokazivač */
+    text-decoration: none; /* Bez podvlačenja */
+    transition: color 0.3s ease; /* Glatki hover efekat */
+    
+}
+
+/* Hover efekat na dugme */
+.accordion-item button:hover {
+    color: rgba(0, 90, 150, 1); /* Svetlija nijansa na hover */
+}
+
+/* Accordion Content (Skriveno po defaultu) */
+.accordion-content {
+    font-family: 'Modern Era', sans-serif; /* Font za sadržaj */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.28px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(112, 112, 112, 1); /* Siva boja za sadržaj */
+    padding-top: 1rem; /* Razmak iznad */
+    display: none; /* Početno sakriveno */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Glatki prelaz za otvaranje/zatvaranje */
+}
+
+/* Kada je sadržaj otvoren */
+.accordion-content.open {
+    display: block; /* Prikaži sadržaj */
+}
+
+/* Naslov Accordion Sekcije */
+.accordion_section h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 63.84px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    background: linear-gradient(299.72deg, #0071BC 17.65%, #00D694 98.17%); /* Gradijent u naslovu */
+    -webkit-background-clip: text; /* Prikaz gradijenta unutar teksta */
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    margin-bottom: 2rem;
 }

@@ -11,8 +11,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#0071BC", // Dodaj prilagođenu boju pod imenom `primary`
+        secundary: "rgba(0, 113, 188, 0.5)",
+ 
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(299.72deg, #0071BC 17.65%, #00D694 98.17%)',
+      },
       fontFamily: {
         bricolageGrotesque: ['"BricolageGrotesque"', "Tahoma", "sans-serif"],
+        modern: ["Modern Era", "sans-serif"],
+      },
+      fontSize: {
+        name: "14px",
+        job: "12px",
+      },
+      lineHeight: {
+        name: "24px",
+        job: "16px",
+      },
+      letterSpacing: {
+        tight: "-0.04em",
       },
       keyframes: {
         fadeInDown: {
