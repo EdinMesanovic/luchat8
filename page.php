@@ -16,6 +16,9 @@ get_header()
             // Gallery Section
             elseif (get_row_layout() == 'accordion_section'):
                 get_template_part('blocks/accordion/accordion');
+
+            elseif (get_row_layout() == 'home_section_wiki'):
+                get_template_part('blocks/home-wiki/home-wiki');
     
             // Services Section
             elseif (get_row_layout() == 'services_section'):

@@ -3,7 +3,7 @@ $title = get_sub_field('title'); // Dinamički naslov iz ACF-a
 $subtitle = get_sub_field('subtitle'); // Dinamički podnaslov iz ACF-a
 ?>
 
-<section class="py-16 text-center">
+<section class="section__heading py-16 text-center">
     <!-- Naslov -->
     <?php if ($title): ?>
         <h2 class="bg-custom-gradient inline-block text-transparent bg-clip-text text-[32px] sm:text-[48px] md:text-[48px] lg:text-[48px] font-bold leading-[1.2] tracking-[-0.02em] font-bricolageGrotesque mb-5">

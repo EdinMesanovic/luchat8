@@ -12,9 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0071BC", // Dodaj prilagođenu boju pod imenom `primary`
-        secundary: "rgba(0, 113, 188, 0.5)",
- 
+        primary: "#0071BC", 
+        secondary: "rgba(0, 113, 188, 0.5)",
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(299.72deg, #0071BC 17.65%, #00D694 98.17%)',
@@ -26,6 +25,10 @@ module.exports = {
       fontSize: {
         name: "14px",
         job: "12px",
+        'title-large': ['32px', {
+          lineHeight: '42.56px',
+          letterSpacing: '-0.02em',
+        }], // Dodata fontSize za title-large
       },
       lineHeight: {
         name: "24px",
@@ -36,13 +39,19 @@ module.exports = {
       },
       keyframes: {
         fadeInDown: {
-            '0%': { opacity: '0', transform: 'translateY(-20px)' },
-            '100%': { opacity: '1', transform: 'translateY(0)' },
-          },
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        animation: {
-            'fade-in-down': 'fadeInDown 0.5s ease-out',
-        },
+      },
+      animation: {
+        'fade-in-down': 'fadeInDown 0.5s ease-out',
+      },
+      textUnderlinePosition: {
+        fromFont: 'from-font',
+      },
+      textDecorationSkipInk: {
+        none: 'none',
+      },
     },
   },
   plugins: [],
