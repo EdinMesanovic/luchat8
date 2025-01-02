@@ -57,7 +57,7 @@ if ($news_query->have_posts()): ?>
             <?php endwhile; ?>
         </div>
 
-        <div class="flex justify-center mt-20">
+        <div class="flex justify-center mt-10 md:mt-20">
         <a href="/all-news" 
    class="flex items-center justify-center px-[30px] py-[10px] h-[60px] bg-[rgba(0,113,188,1)] text-white text-[16px] leading-[19.2px] tracking-[-0.04em] text-center rounded-full shadow-md hover:bg-[rgba(0,90,150,1)] transition duration-300 font-normal" 
    style="font-weight: 400;">
