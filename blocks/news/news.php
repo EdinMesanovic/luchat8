@@ -9,7 +9,7 @@ $args = array(
 $news_query = new WP_Query($args);
 
 if ($news_query->have_posts()): ?>
-    <section class="section__news my-10 mx-[12px] md:mx-20 lg:mx:40">
+    <section class="section__news my-10 mx-[12px] md:mx-20 lg:mx-40">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <?php while ($news_query->have_posts()): $news_query->the_post(); ?>
                 <div class="news-item overflow-hidden">
@@ -57,10 +57,13 @@ if ($news_query->have_posts()): ?>
             <?php endwhile; ?>
         </div>
 
-        <div class="flex justify-center mt-8">
-                <a href="/all-news" class="px-6 py-3 bg-[rgba(0,113,188,1)] text-white text-[16px] leading-[19.2px] tracking-[-0.04em] text-center rounded-full shadow-md hover:bg-[rgba(0,90,150,1)] transition duration-300 font-bricolageGrotesque font-normal" style="font-weight: 400;">
-            View all
-        </a>
+        <div class="flex justify-center mt-20">
+        <a href="/all-news" 
+   class="flex items-center justify-center px-[30px] py-[10px] h-[60px] bg-[rgba(0,113,188,1)] text-white text-[16px] leading-[19.2px] tracking-[-0.04em] text-center rounded-full shadow-md hover:bg-[rgba(0,90,150,1)] transition duration-300 font-normal" 
+   style="font-weight: 400;">
+    View all
+</a>
+
         </div>
 
     </section>
