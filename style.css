@@ -125,3 +125,80 @@ body {
     display: block; /* Prikaži sadržaj */
 }
 
+/* news */
+.content p {
+    font-family: 'Modern Era', sans-serif;
+    font-size: 20px; /* Za velike ekrane */
+    font-weight: 500;
+    line-height: 26.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(112, 112, 112, 1);
+}
+
+@media (max-width: 640px) {
+    .content p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.28px;
+    }
+
+    .content h2 {
+        font-size: 24px; /* Manja veličina fonta */
+        line-height: 31.92px; /* Manja visina reda */
+    }
+
+    .content h3 {
+        font-size: 20px; /* Manja veličina fonta */
+        font-weight: 500;
+        line-height: 26.6px;
+    }
+}
+
+.content-news {
+    font-family: 'Modern Era', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(112, 112, 112, 1);
+}
+
+.content-news ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/* Stil za h2 tag */
+.content-news h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 38px;
+    margin: 20px 0 20px 0;
+    font-weight: 700;
+    line-height: 50.54px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(1, 114, 188, 1);
+}
+
+/* Stil za h3 tag */
+.content-news h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+
+    font-weight: 700;
+    line-height: 31.92px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(1, 114, 188, 1);
+}

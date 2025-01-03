@@ -20,12 +20,14 @@ get_header()
             elseif (get_row_layout() == 'home_section_wiki'):
                 get_template_part('blocks/home-wiki/home-wiki');
     
-            // Services Section
             elseif (get_row_layout() == 'news_section'):
                 get_template_part('blocks/news/news');
+
+            elseif (get_row_layout() == 'partners_section'):
+                get_template_part('blocks/partners/partners');
                 
-                elseif (get_row_layout() == 'slider_section'):
-                    get_template_part('blocks/slider/slider');
+            elseif (get_row_layout() == 'slider_section'):
+                get_template_part('blocks/slider/slider');
     
             endif;
     

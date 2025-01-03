@@ -31,9 +31,13 @@ if ($news_query->have_posts()): ?>
                     <?php
                     $categories = get_the_category();
                     if (!empty($categories)): ?>
-                        <span class="absolute px-3 py-2 bottom-3 right-3 text-[12px] font-normal leading-[16px] text-right text-white font-modern border border-white rounded-full z-20">
-                            <?php echo esc_html($categories[0]->name); ?>
-                        </span>
+                        <div class="absolute flex gap-2 bottom-3 right-3 z-20">
+                            <?php foreach ($categories as $category): ?>
+                                <span class="ml-3 px-3 py-2 text-[12px] font-normal leading-[16px] text-right text-white font-modern border border-white rounded-full">
+                                    <?php echo esc_html($category->name); ?>
+                                </span>
+                            <?php endforeach; ?>
+                        </div>
                     <?php endif; ?>
                 </div>
 
@@ -58,7 +62,7 @@ if ($news_query->have_posts()): ?>
         </div>
 
         <div class="flex justify-center mt-10 md:mt-20">
-        <a href="/all-news" 
+        <a href="/wordpress/index.php/news/" 
    class="flex items-center justify-center px-[30px] py-[10px] h-[60px] bg-[rgba(0,113,188,1)] text-white text-[16px] leading-[19.2px] tracking-[-0.04em] text-center rounded-full shadow-md hover:bg-[rgba(0,90,150,1)] transition duration-300 font-normal" 
    style="font-weight: 400;">
     View all
