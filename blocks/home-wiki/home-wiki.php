@@ -1,4 +1,4 @@
-<section class="section__home-wiki mr-40 ml-40">
+<section class="section__home-wiki mr-40 ml-40 hidden">
     <div class="grid grid-rows-3 grid-flow-col gap-4">
     <div class="row-span-3 ...">
         <?php if (have_rows('urls')): ?>

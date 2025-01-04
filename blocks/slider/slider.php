@@ -21,7 +21,7 @@
                                 <span class="star">&#9734;</span>
                             <?php endfor; ?>
                         </div>
-                        <p class="review text-primary pb-6" style="font-family: 'Modern Era', sans-serif; font-size: 18px; font-weight: 500; line-height: 23.5px; text-align: left; text-underline-position: from-font; text-decoration-skip-ink: none;">
+                        <p class="review text-primary pb-6 font-modern text-[14px] sm:text-[18px] font-medium leading-[18px] sm:leading-[23.5px] text-left text-underline-position-from-font text-decoration-skip-ink-none">
                             <?php echo esc_html($review); ?>
                         </p>
                         <div class="reviewer-info">

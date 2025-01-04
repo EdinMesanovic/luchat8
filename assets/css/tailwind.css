@@ -1,10 +1,25 @@
 @font-face {
-  font-family: "BricolageGrotesque";
-  src: url("../fonts/bricolage-grotesque/BricolageGrotesque-Bold.ttf")
-    format("truetype");
-  font-weight: 400;
+  font-family: 'Bricolage Grotesque';
+  src: url('../fonts/BricolageGrotesque-Regular.ttf') format('ttf'),
+       url('../fonts/BricolageGrotesque-Regular.ttf') format('ttf');
+  font-weight: 400; /* Regular */
   font-style: normal;
-  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('../fonts/BricolageGrotesque-Bold./Applications/MAMP/htdocs/wordpress/wp-content/themes/luchat8/assets/fonts/bricolage-grotesque/BricolageGrotesque-Bold.ttf') format('ttf'),
+       url('../fonts/BricolageGrotesque-Bold.ttf') format('ttf');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Modern Era';
+  src: url('../fonts/ModernEra-Regular.ttf') format('ttf'),
+       url('../fonts/ModernEra-Regular.ttf') format('ttf');
+  font-weight: 400; /* Regular */
+  font-style: normal;
 }
 
 .w-embed:before,
