@@ -8,7 +8,7 @@
                     $name = get_sub_field('name');
                     $job_title = get_sub_field('job_title');
                 ?>
-                <div class="swiper-slide h-auto custom-border pl-16 pr-16 py-10 text-left p-6 text-primary overflow-hidden">
+                <div class="swiper-slide w-[500px] h-[300px] custom-border pl-16 pr-16 py-10 text-left p-6 text-primary overflow-hidden">
                     <div class="review-content">
                         <div class="rating pb-2.5">
                             <?php 

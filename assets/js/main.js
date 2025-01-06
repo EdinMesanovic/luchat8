@@ -69,3 +69,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Funkcija za otvaranje modala
+function openYouTubeModal(youtubeUrl) {
+    const modal = document.getElementById('youtube-modal');
+    const iframe = document.getElementById('youtube-iframe');
+
+    // Postavi src atribut iframe-a na prosleđeni URL
+    iframe.src = youtubeUrl + '?autoplay=1&rel=0';
+    
+    // Prikaži modal
+    modal.classList.remove('hidden');
+}
+
+// Funkcija za zatvaranje modala
+function closeYouTubeModal() {
+    const modal = document.getElementById('youtube-modal');
+    const iframe = document.getElementById('youtube-iframe');
+
+    // Obriši src atribut iframe-a kako bi se video zaustavio
+    iframe.src = '';
+
+    // Sakrij modal
+    modal.classList.add('hidden');
+}

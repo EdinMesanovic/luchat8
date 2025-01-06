@@ -11,3 +11,10 @@ function rewrite_flush_fix() {
     flush_rewrite_rules(); 
 }
 add_action('after_switch_theme', 'rewrite_flush_fix');
+
+function get_youtube_embed_url($url) {
+    parse_str(parse_url($url, PHP_URL_QUERY), $query);
+    return isset($query['v']) ? 'https://www.youtube.com/embed/' . $query['v'] : '';
+}
+
+

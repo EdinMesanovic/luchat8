@@ -202,3 +202,16 @@ body {
     text-decoration-skip-ink: none;
     color: rgba(1, 114, 188, 1);
 }
+
+#youtube-modal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
