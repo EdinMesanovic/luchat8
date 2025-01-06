@@ -28,7 +28,10 @@ get_header()
                 
             elseif (get_row_layout() == 'slider_section'):
                 get_template_part('blocks/slider/slider');
-            
+
+            elseif (get_row_layout() == 'campaign_section'):
+                get_template_part('blocks/campaign/campaign');
+
             elseif (get_row_layout() == 'video_slider_section'):
                 get_template_part('blocks/video-slider/video-slider');
     
